@@ -1,0 +1,72 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 6,
+    "identityHash": "aec19a08d1cae234ae3ee8f06a55966a",
+    "entities": [
+      {
+        "tableName": "favourite_table_name",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`movie_id_column` INTEGER NOT NULL, `is_favourite_column` INTEGER NOT NULL, PRIMARY KEY(`movie_id_column`))",
+        "fields": [
+          {
+            "fieldPath": "movieId",
+            "columnName": "movie_id_column",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isFavourite",
+            "columnName": "is_favourite_column",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "movie_id_column"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "reminder_table_name",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`reminder_id_column` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `movie_id_column` INTEGER NOT NULL, `reminder_time_column` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "reminderId",
+            "columnName": "reminder_id_column",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "movieId",
+            "columnName": "movie_id_column",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "reminderTime",
+            "columnName": "reminder_time_column",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "reminder_id_column"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'aec19a08d1cae234ae3ee8f06a55966a')"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_year_from_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/_18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/from_release_year" />
+
+    <EditText
+        android:id="@+id/edt_year_from"
+        android:textSize="@dimen/_16sp"
+        android:layout_marginTop="@dimen/_12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_year_from_title"
+        android:textColor="@color/black2"
+        android:layout_width="0dp"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:text="@string/year_demo" />
+
+    <TextView
+        android:id="@+id/btn_no_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12dp"
+        android:layout_marginEnd="@dimen/_40dp"
+        android:text="@string/no"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sp"
+        android:textColor="@color/green4baf4f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_yes_"
+        app:layout_constraintTop_toBottomOf="@id/edt_year_from" />
+
+    <TextView
+        android:id="@+id/btn_yes_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12dp"
+        android:text="@string/yes"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sp"
+        android:textColor="@color/green4baf4f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_year_from" />
+</androidx.constraintlayout.widget.ConstraintLayout>

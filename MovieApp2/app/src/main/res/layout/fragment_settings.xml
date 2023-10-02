@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:background="@color/white"
+    android:id="@+id/container_settings_reminder">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_filter_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sp"
+            android:textAllCaps="true"
+            android:textColor="@color/gray_555"
+            android:text="@string/filter" />
+
+        <TextView
+            android:id="@+id/tv_line_1"
+            app:layout_constraintTop_toBottomOf="@id/tv_filter_title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/gray_bbb"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2dp" />
+
+        <TextView
+            android:id="@+id/tv_category_title"
+            android:layout_marginTop="@dimen/_12dp"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_line_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_555"
+            android:text="@string/popular_movies" />
+
+        <TextView
+            android:id="@+id/tv_rating_title"
+            android:layout_marginTop="@dimen/_12dp"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movie_with_rate_from" />
+
+        <TextView
+            android:id="@+id/tv_rating"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_rating_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_555"
+            android:text="@string/rate_demo" />
+
+        <TextView
+            android:id="@+id/tv_year_release_title"
+            android:layout_marginTop="@dimen/_12dp"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from_release_year" />
+
+        <TextView
+            android:id="@+id/tv_year_release"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_year_release_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_555"
+            android:text="@string/year_demo" />
+
+
+        <TextView
+            android:id="@+id/tv_sort_title"
+            android:layout_marginTop="@dimen/_12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_year_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sp"
+            android:textAllCaps="true"
+            android:textColor="@color/gray_555"
+            android:text="@string/sort" />
+
+        <TextView
+            android:id="@+id/tv_line_2"
+            app:layout_constraintTop_toBottomOf="@id/tv_sort_title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/gray_bbb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2dp" />
+
+        <TextView
+            android:id="@+id/tv_sort_by_title"
+            android:layout_marginTop="@dimen/_12dp"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_line_2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sort_by" />
+
+        <TextView
+            android:id="@+id/tv_sort_by"
+            app:layout_constraintTop_toBottomOf="@id/tv_sort_by_title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_555"
+            android:text="@string/release_date_normal" />
+
+
+        <TextView
+            android:id="@+id/tv_language_title"
+            android:layout_marginTop="@dimen/_12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_sort_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sp"
+            android:textAllCaps="true"
+            android:textColor="@color/gray_555"
+            android:text="@string/language" />
+
+        <TextView
+            android:id="@+id/tv_line_3"
+            app:layout_constraintTop_toBottomOf="@id/tv_language_title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/gray_bbb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_set_language"
+            app:layout_constraintTop_toBottomOf="@id/tv_line_3"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/rb_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/english" />
+
+            <RadioButton
+                android:id="@+id/rb_japanese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/japanese" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

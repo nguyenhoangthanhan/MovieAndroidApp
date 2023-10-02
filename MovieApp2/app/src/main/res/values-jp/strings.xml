@@ -1,0 +1,91 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MovieApp</string>
+
+    <string name="name">名前</string>
+    <string name="email">Eメール</string>
+    <string name="day_of_birth">生まれた日</string>
+    <string name="sex">セックス</string>
+    <string name="birthday">誕生日</string>
+
+    <string name="email_error_message">メールが無効です</string>
+
+    <string name="movies">映画</string>
+    <string name="favourite">本命</string>
+    <string name="settings">設定</string>
+    <string name="about">約</string>
+    <string name="day_demo">2022/11/11</string>
+    <string name="date_time_demo">2022/11/11 14:02:55</string>
+    <string name="name_demo">Nguyen Thien Quan</string>
+    <string name="email_demo">demoemail@gmail.com</string>
+    <string name="sex_male">男</string>
+    <string name="sex_female">女性</string>
+    <string name="edit">編集</string>
+    <string name="switch_profile">プロファイルを切り替える</string>
+    <string name="show_all">すべて表示する</string>
+    <string name="delete">消去</string>
+    <string name="cancel">キャンセル</string>
+    <string name="add_new_user">新しいユーザーを追加</string>
+    <string name="done">終わり</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+
+
+    <string name="s_tv_item_1">Movie Title - Year - xx/10</string>
+    <string name="s_tv_item_2">YYYY/MM/DD HH:MM</string>
+
+    <string name="copy_right_demo">Copy right: REC 2015</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description_poster_demo">最高の映画</string>
+
+    <string name="release_date">発売日:</string>
+    <string name="release_date_demo">2015–10–26</string>
+
+    <string name="rating">評価:</string>
+    <string name="rating_demo">7.6/10</string>
+
+    <string name="overview">概要:</string>
+    <string name="overview_demo">ビューパッケージの下にPostsAdapter.javaという名前のクラスを作成します。レイアウト名はpost_row_item.xmlであるため、生成されたバインディング
+        クラスはPostRowItemBindingになります。 onCreateViewHolder（）メソッドでは、PostRowItemBindingクラスを使用してpost_row_itemレイアウトを拡張します。
+        holder.binding.setPost（）は、Postモデルを各行にバインドします。</string>
+
+    <string name="overview_demo2">onCreateViewHolder（）メソッドでは、PostRowItemBindingクラスを使用してpost_row_itemレイアウトを拡張します。ホルダー。バインディング
+        .setPost（）は、Postモデルを各行にバインドします。</string>
+
+    <string name="film_name_demo">Ant-Man</string>
+    <string name="reminder">リマインダー</string>
+    <string name="cast_and_crew">キャスト &amp; クルー</string>
+    <string name="FLAG_MAIN_FRAGMENT">MAIN_FRAGMENT_FLAG</string>
+
+    <string name="filter">フィルター</string>
+    <string name="category">カテゴリー</string>
+    <string name="popular_movies">人気の映画</string>
+    <string name="top_rated_movies">最高評価の映画</string>
+    <string name="upcoming_movies">今後の映画</string>
+    <string name="now_playing_movies">今映画を再生しています</string>
+
+    <string name="movie_with_rate_from">からのレートの映画</string>
+    <string name="rate_demo">4</string>
+    <string name="from_release_year">発売年から</string>
+    <string name="year_demo">1900</string>
+    <string name="sort">選別</string>
+    <string name="sort_by">並び替え</string>
+    <string name="release_date_normal">発売日</string>
+    <string name="rating_normal">評価</string>
+
+    <string name="hint_search">ここに検索語を入力してください</string>
+    <string name="search">探す</string>
+    <string name="show_methods">メソッドを表示する</string>
+    <string name="three_dots">3つのドット</string>
+    <string name="about_info">https://www.themoviedb.org/about/our-history</string>
+    <string name="all_reminders">すべてのリマインダー</string>
+    <string name="language">言語</string>
+    <string name="english">English</string>
+    <string name="japanese">日本</string>
+
+    <string name="message_change_language">言語を正常に変更します。変更を適用するには、アプリケーションを再度開いてください。</string>
+
+    <string name="message_year_error" tools:ignore="ExtraTranslation">あなたの入力年は真実ではありません！</string>
+    <string name="message_open_gallery" tools:ignore="ExtraTranslation">ギャラリーの写真を開くには、この許可を与える必要があります!</string>
+
+</resources>

@@ -1,0 +1,89 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MovieApp</string>
+
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="day_of_birth">Day of birth</string>
+    <string name="sex">Sex</string>
+    <string name="birthday">Birthday</string>
+
+    <string name="email_error_message">Email is not valid</string>
+
+    <string name="movies">Movies</string>
+    <string name="favourite">Favourite</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="day_demo">2022/11/11</string>
+    <string name="date_time_demo">2022/11/11 14:02:55</string>
+    <string name="name_demo">Nguyen Thien Quan</string>
+    <string name="email_demo">demoemail@gmail.com</string>
+    <string name="sex_male">Male</string>
+    <string name="sex_female">Female</string>
+    <string name="edit">Edit</string>
+    <string name="switch_profile">Switch profile</string>
+    <string name="show_all">Show all</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_new_user">Add new user</string>
+    <string name="done">Done</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+    <string name="s_tv_item_1">Movie Title - Year - xx/10</string>
+    <string name="s_tv_item_2">YYYY/MM/DD HH:MM</string>
+
+    <string name="copy_right_demo">Copy right: Movie API</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description_poster_demo">A best movie</string>
+
+    <string name="release_date">Release date:</string>
+    <string name="release_date_demo">2015–10–26</string>
+
+    <string name="rating">Rating:</string>
+    <string name="rating_demo">7.6/10</string>
+
+    <string name="overview">Overview:</string>
+    <string name="overview_demo">Create a class named PostsAdapter.java under view package.As the layout name is post_row_item.xml, the generated binding
+        class will be PostRowItemBinding. In onCreateViewHolder() method, post_row_item layout is inflated with the help of PostRowItemBinding class. holder.binding.setPost() binds the Post model to each row.</string>
+
+    <string name="overview_demo2">In onCreateViewHolder() method, post_row_item layout is inflated with the help of PostRowItemBinding class. holder.binding
+        .setPost() binds the Post model to each row.</string>
+
+    <string name="film_name_demo">Ant-Man</string>
+    <string name="reminder">Reminder</string>
+    <string name="cast_and_crew">Cast &amp; crew</string>
+    <string name="FLAG_MAIN_FRAGMENT">MAIN_FRAGMENT_FLAG</string>
+
+    <string name="filter">filter</string>
+    <string name="category">Category</string>
+    <string name="popular_movies">Popular movies</string>
+    <string name="top_rated_movies">Top rated movies</string>
+    <string name="upcoming_movies">Upcoming movies</string>
+    <string name="now_playing_movies">Now playing movies</string>
+
+    <string name="movie_with_rate_from">Movie with rate from</string>
+    <string name="rate_demo">4</string>
+    <string name="from_release_year">From release year</string>
+    <string name="year_demo">1900</string>
+    <string name="sort">Sort</string>
+    <string name="sort_by">Sort by</string>
+    <string name="release_date_normal">Release data</string>
+    <string name="rating_normal">Rating</string>
+
+    <string name="hint_search">Input your search words here</string>
+    <string name="search">Search</string>
+    <string name="show_methods">Show methods</string>
+    <string name="three_dots">Three dots</string>
+    <string name="about_info">https://www.themoviedb.org/about/our-history</string>
+    <string name="all_reminders">All reminders</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="japanese">日本</string>
+
+    <string name="message_change_language">Change language successfully. Please re-open application to apply the change.</string>
+
+    <string name="message_year_error" tools:ignore="ExtraTranslation">Your input year is not true!</string>
+    <string name="message_open_gallery" tools:ignore="ExtraTranslation">You have to grant this permission to open the gallery photos!</string>
+</resources>

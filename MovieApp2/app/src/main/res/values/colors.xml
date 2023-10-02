@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_111">#111</color>
+    <color name="gray_222">#222</color>
+    <color name="gray_333">#333</color>
+    <color name="gray_444">#444</color>
+    <color name="gray_555">#555</color>
+    <color name="gray_666">#666</color>
+    <color name="gray_777">#777</color>
+    <color name="gray_888">#888</color>
+    <color name="gray_999">#999</color>
+    <color name="gray_aaa">#aaa</color>
+    <color name="gray_bbb">#bbb</color>
+    <color name="gray_ccc">#ccc</color>
+    <color name="gray_ddd">#ddd</color>
+    <color name="gray_eee">#eee</color>
+
+    <color name="blue_7384E1">#7384E1</color>
+    <color name="green_ECF3AC">#ECF3AC</color>
+    <color name="red_E3837C">#E3837C</color>
+    <color name="purple_D998E4">#D998E4</color>
+    <color name="orange_F3BD6D">#F3BD6D</color>
+    <color name="orange_FFD555">#FFD555</color>
+    <color name="orange_AA8104">#AA8104</color>
+    <color name="black1">#111</color>
+    <color name="black2">#222</color>
+    <color name="black23">#232323</color>
+    <color name="black3">#333</color>
+
+    <color name="gray_tab_layout_bottom">#333</color>
+
+    <color name="green_remind_list_nav">#CCFFCC</color>
+    <color name="green8bc24a">#8bc24a</color>
+    <color name="green4baf4f">#4baf4f</color>
+
+    <color name="red_selected_tab_layout_bottom">#ff1a44</color>
+
+
+    <color name="red_light10">#D3453A</color>
+    <color name="green_light10">#2CB533</color>
+    <color name="blue_bg_bottom_nav">#3F51B5</color>
+    <color name="blue_light1">#2196F3</color>
+    <color name="blue_1C2F97">#1C2F97</color>
+    <color name="red_D6574D">#D6574D</color>
+    <color name="red_e57f82">#e57f82</color>
+    <color name="red_text_info_film">#FE518C</color>
+    <color name="blue_05a4fa">#05a4fa</color>
+    <color name="blue_light_00bda7">#00bda7</color>
+    <color name="blue_light_a6d7fe">#a6d7fe</color>
+    <color name="blue_light_adf7fd">#adf7fd</color>
+
+    <color name="red_very_bland_FDE2E6">#FDE2E6</color>
+    <color name="red_bland_E37F77">#E37F77</color>
+    <color name="blue_bland_E37F77">#C5DEED</color>
+</resources>

@@ -1,0 +1,46 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "094fe2357ab9156c2ecfd1b9f28d2b58",
+    "entities": [
+      {
+        "tableName": "favourite_table_name",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`movie_id_column` INTEGER NOT NULL, `movie_genre_column` TEXT, `is_favourite_column` INTEGER NOT NULL, PRIMARY KEY(`movie_id_column`))",
+        "fields": [
+          {
+            "fieldPath": "movieId",
+            "columnName": "movie_id_column",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "movieGenre",
+            "columnName": "movie_genre_column",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isFavourite",
+            "columnName": "is_favourite_column",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "movie_id_column"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '094fe2357ab9156c2ecfd1b9f28d2b58')"
+    ]
+  }
+}

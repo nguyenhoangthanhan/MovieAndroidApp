@@ -1,0 +1,128 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 9,
+    "identityHash": "294868c634039713b3e4913c2a069a03",
+    "entities": [
+      {
+        "tableName": "favourite_table_name",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`movie_id_column` INTEGER NOT NULL, `is_favourite_column` INTEGER NOT NULL, `user_id_column` INTEGER, PRIMARY KEY(`movie_id_column`))",
+        "fields": [
+          {
+            "fieldPath": "movieId",
+            "columnName": "movie_id_column",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isFavourite",
+            "columnName": "is_favourite_column",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "idUser",
+            "columnName": "user_id_column",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "movie_id_column"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "reminder_table_name",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`movie_id_column` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `reminder_time_column` TEXT, `user_id_column` INTEGER)",
+        "fields": [
+          {
+            "fieldPath": "movieId",
+            "columnName": "movie_id_column",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "reminderTime",
+            "columnName": "reminder_time_column",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idUser",
+            "columnName": "user_id_column",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "movie_id_column"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "user_table_name",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`user_id_column` INTEGER PRIMARY KEY AUTOINCREMENT, `name_of_user_column` TEXT, `email_of_user_column` TEXT, `user_birthday_column` TEXT, `sex_of_user_column` TEXT, `avatar_of_user_column` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "idUser",
+            "columnName": "user_id_column",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name_of_user_column",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email_of_user_column",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "birthday",
+            "columnName": "user_birthday_column",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sex",
+            "columnName": "sex_of_user_column",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "avatar",
+            "columnName": "avatar_of_user_column",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "user_id_column"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '294868c634039713b3e4913c2a069a03')"
+    ]
+  }
+}

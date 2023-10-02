@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_main"
+    android:clickable="false"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawer_layout_for_bottom"
+            android:fitsSystemWindows="false"
+            tools:openDrawer="start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.fragment.MainFragment">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/app_bar_layout_top"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                            android:background="@color/purple_700"/>
+
+                        <!-- Right most TextView -->
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_title_fragment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/white"
+                            android:drawablePadding="@dimen/_8dp"
+                            android:text="@string/movies"
+                            android:maxEms="12"
+                            android:maxLines="1"
+                            app:layout_constraintBottom_toBottomOf="@id/toolbar"
+                            app:layout_constraintEnd_toStartOf="@id/img_show_methods"
+                            app:layout_constraintStart_toStartOf="@id/toolbar"
+                            app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:visibility="invisible"
+                            android:id="@+id/tv_title_fragment_tabhome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/white"
+                            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+                            android:drawablePadding="@dimen/_8dp"
+                            android:text="@string/movies"
+                            android:maxEms="12"
+                            android:maxLines="1"
+                            app:layout_constraintBottom_toBottomOf="@id/toolbar"
+                            app:layout_constraintEnd_toStartOf="@id/img_show_methods"
+                            app:layout_constraintStart_toStartOf="@id/toolbar"
+                            app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+                        <EditText
+                            android:visibility="gone"
+                            android:id="@+id/edt_input_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="@dimen/_12sp"
+                            android:imeOptions="actionSearch"
+                            android:textColor="@color/white"
+                            android:hint="@string/hint_search"
+                            android:ems="13"
+                            android:maxLines="1"
+                            app:layout_constraintBottom_toBottomOf="@id/toolbar"
+                            app:layout_constraintEnd_toStartOf="@id/img_search"
+                            app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+                        <!-- Right most TextView -->
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_show_methods"
+                            android:layout_width="@dimen/_28dp"
+                            android:layout_height="@dimen/_28dp"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_baseline_view_module_24"
+                            app:layout_constraintBottom_toBottomOf="@id/toolbar"
+                            app:layout_constraintEnd_toStartOf="@+id/img_three_dot"
+                            app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:visibility="gone"
+                            android:id="@+id/img_search"
+                            android:layout_width="@dimen/_24dp"
+                            android:layout_height="@dimen/_24dp"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_baseline_search_24"
+                            app:layout_constraintBottom_toBottomOf="@id/toolbar"
+                            app:layout_constraintEnd_toStartOf="@+id/img_three_dot"
+                            app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:visibility="gone"
+                            android:id="@+id/img_cancel_search"
+                            android:layout_width="@dimen/_24dp"
+                            android:layout_height="@dimen/_24dp"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_baseline_clear_24"
+                            app:layout_constraintBottom_toBottomOf="@id/toolbar"
+                            app:layout_constraintEnd_toStartOf="@+id/img_three_dot"
+                            app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+                        <!-- Right most TextView -->
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_three_dot"
+                            android:layout_width="@dimen/_24dp"
+                            android:layout_height="@dimen/_24dp"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_three_vertical_dot"
+                            app:layout_constraintBottom_toBottomOf="@id/toolbar"
+                            app:layout_constraintEnd_toEndOf="@+id/toolbar"
+                            app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_genre"
+                            android:visibility="gone"
+                            android:background="@color/purple_700"
+                            android:paddingStart="@dimen/_20dp"
+                            android:paddingEnd="@dimen/_20dp"
+                            app:layout_constraintTop_toBottomOf="@id/toolbar"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/rb_popular_movies"
+                                android:layout_marginStart="@dimen/_8dp"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/popular_movies" />
+
+                            <RadioButton
+                                android:id="@+id/rb_top_rated_movies"
+                                android:layout_marginStart="@dimen/_8dp"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/top_rated_movies" />
+
+                            <RadioButton
+                                android:id="@+id/rb_upcoming_movies"
+                                android:layout_marginStart="@dimen/_8dp"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/upcoming_movies" />
+
+                            <RadioButton
+                                android:id="@+id/rb_now_playing_movies"
+                                android:layout_marginStart="@dimen/_8dp"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/now_playing_movies" />
+                        </RadioGroup>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/view_pager2_movies"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintTop_toBottomOf="@id/app_bar_layout_top"
+                    app:layout_constraintBottom_toTopOf="@+id/tab_layout_bottom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout_bottom"
+                    android:background="@color/blue_bg_bottom_nav"
+                    app:tabTextAppearance="@style/CustomTextAppearance"
+                    app:tabSelectedTextColor="@color/orange_FFD555"
+                    app:tabIconTint="@color/custom_color_nv"
+                    app:tabIndicatorHeight="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.google.android.material.tabs.TabLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <com.google.android.material.navigation.NavigationView
+                app:headerLayout="@layout/layout_header_nav"
+                android:layout_gravity="start"
+                android:fitsSystemWindows="true"
+                android:id="@+id/navBottomTab"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</FrameLayout>
