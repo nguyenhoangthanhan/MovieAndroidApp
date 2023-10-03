@@ -1,5 +1,7 @@
 Demo link: https://www.youtube.com/watch?v=weRGVzgatWI
 
+Create an app movie according to document requirements, coding using Java, XML, and Android. Apply: MVVM, Tab Layout, Navigation View, Toolbar, Interface, Jetpack(Room, View Binding), Fragment, Retrofit2 and RxJava3 call API, Rx Android, Room, Recycle View and DiffUtils, Dialog Fragment, ViewPager2, Alarm Manager and broadcast receiver to push notification, Live Data, Singleton class, Constraint Layout, Multi Language...
+
 Main function:
 1. Open app visible Splach Screen in 3 seconds
 2. Have option menu button, when click, display 4 menu: Favourite, Movies, Settings, About. Switch to the corresponding tab
