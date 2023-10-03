@@ -1,3 +1,5 @@
+Demo link: https://www.youtube.com/watch?v=weRGVzgatWI
+
 Main function:
 1. Open app visible Splach Screen in 3 seconds
 2. Have option menu button, when click, display 4 menu: Favourite, Movies, Settings, About. Switch to the corresponding tab
